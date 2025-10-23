@@ -1,0 +1,78 @@
+# -----------------------------------------------------
+# 🚫 General Node + Next.js
+# -----------------------------------------------------
+node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+dist/
+build/
+out/
+.next/
+.next.cache/
+.cache/
+coverage/
+
+# -----------------------------------------------------
+# ⚙️ Local environment / secrets
+# -----------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# -----------------------------------------------------
+# 🧩 Database & Runtime Data
+# -----------------------------------------------------
+# Keep your schema, ignore runtime DB
+prisma/dev.db
+prisma/test.db
+*.sqlite
+*.sqlite-journal
+*.db
+/data/
+backend/data/
+tmp/
+bin/
+logs/
+*.log
+
+# -----------------------------------------------------
+# 🐳 Docker / Containers
+# -----------------------------------------------------
+docker-compose.override.yml
+docker/data/
+docker/volumes/
+.docker/
+
+# -----------------------------------------------------
+# ⚡ Codex CLI Runtime Files
+# -----------------------------------------------------
+.codex/
+codex.lock
+codex_state.json
+codex_cache/
+.codex_temp/
+
+# -----------------------------------------------------
+# 🧱 IDEs and OS junk
+# -----------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.tmp
+*.orig
+
+# -----------------------------------------------------
+# 📦 Output / Artifacts
+# -----------------------------------------------------
+*.zip
+*.tar
+*.gz
+*.tgz
+*.bak
+*.old

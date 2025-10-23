@@ -1,0 +1,15 @@
+services:
+  share-a-book:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: share-a-book
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=file:./prisma/dev.db
+      - NEXTAUTH_URL=http://localhost:3000
+      - NEXTAUTH_SECRET=change-me
+    volumes:
+      - ../public/uploads:/app/public/uploads
+      - ../prisma/dev.db:/app/prisma/dev.db
